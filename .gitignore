@@ -27,3 +27,8 @@ HELP.md
 
 ### VS Code ###
 .vscode/
+.mvn
+mvnw.cmd
+mvnw
+xuehui-shop-user.iml
+xuehui-shop.iml
