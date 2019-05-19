@@ -1,0 +1,16 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title></title>
+</head>
+<body>
+<form action="updateProduct" method="post">
+    <input type="hidden" th:value="${product.id}" name="id"/>
+    商品类别：<input type="text" name="productTypeId" th:value="${product.productTypeId}"/><br/>
+    商品标题：<input type="text" name="productTitle"  th:value="${product.productTitle}"/><br/>
+    商品价格：<input type="text" name="productPrice"  th:value="${product.productPrice}"/><br/>
+    库存：<input type="text" name="stockNum"  th:value="${product.stockNum}"/><br/>
+    商品图片地址：<input type="text" name="productPicurl"  th:value="${product.productPicurl}"/><br/>
+    <input type="submit" th:value="提交"/>
+</form>
+</body>
+</html>

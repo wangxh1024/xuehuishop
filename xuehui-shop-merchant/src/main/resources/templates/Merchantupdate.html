@@ -1,0 +1,17 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title></title>
+</head>
+<body>
+<form action="upateMerchant" method="post">
+    <input name="id" th:value="${Merchant.id}" type="hidden" />
+    商家姓名：<span th:text="${Merchant.merchantName}"></span><input name="merchantName" type="hidden" th:value="${Merchant.merchantName}"/><br/>
+    商家店铺名称：<input name="merchantShopName" th:value="${Merchant.merchantShopName}"/><br/>
+    商家账号：<span th:text="${Merchant.merchantAccount}"></span><input name="merchantAccount" type="hidden" th:value="${Merchant.merchantName}"/><br/>
+    <input name="merchantPassword" th:value="${Merchant.merchantPassword}" type="hidden" />
+    <input name="auditStatus" th:value="${Merchant.auditStatus}" type="hidden" />
+    商家经营范围：<input name="merchantScope" th:value="${Merchant.merchantScope}" /><br/>
+    <input type="submit" value="提交"/><br/>
+</form>
+</body>
+</html>

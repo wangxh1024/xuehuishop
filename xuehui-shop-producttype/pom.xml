@@ -9,10 +9,10 @@
     </parent>
 
     <groupId>com.xuehui</groupId>
-    <artifactId>xuehui-shop-user</artifactId>
+    <artifactId>xuehui-shop-producttype</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>xuehui-shop-user</name>
-    <description>用户服务</description>
+    <name>xuehui-shop-producttype</name>
+    <description>商品分类服务</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -23,11 +23,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>org.mybatis.spring.boot</groupId>-->
-            <!--<artifactId>mybatis-spring-boot-starter</artifactId>-->
-            <!--<version>1.2.0</version>-->
-        <!--</dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

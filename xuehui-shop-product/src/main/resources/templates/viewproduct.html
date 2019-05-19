@@ -1,0 +1,13 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title></title>
+</head>
+<body>
+    商品类别：<span th:text="${product.productTypeId}"></span><br/>
+    商品标题：<span th:text="${product.productTitle}"></span><br/>
+    商品价格：<span th:text="${product.productPrice}"></span><br/>
+    商家id：<span th:text="${product.merchantId}"></span><br/>
+    库存：<span th:text="${product.stockNum}"></span><br/>
+    商品图片地址：<span th:text="${product.productPicurl}"></span><br/>
+</body>
+</html>
