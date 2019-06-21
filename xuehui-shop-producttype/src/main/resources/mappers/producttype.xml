@@ -4,7 +4,7 @@
 
 
 
-    <resultMap id="productTypeResult" type="com.xuehui.producttype.model.ProductType" >
+    <resultMap id="productTypeResult" type="com.xuehui.order.model.producttype.ProductType" >
         <result column="id" property="id" />
         <result column="product_type_name" property="productTypeName"  />
         <result column="product_type_description" property="productTypeDescription"  />
@@ -12,7 +12,7 @@
         <result column="parent_id" property="parentId"  />
     </resultMap>
 
-    <insert id="insertProducttype" parameterType="com.xuehui.producttype.model.ProductType">
+    <insert id="insertProducttype" parameterType="com.xuehui.order.model.producttype.ProductType">
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
             SELECT LAST_INSERT_ID()
         </selectKey>

@@ -1,6 +1,6 @@
 package com.xuehui.product.mapper;
 
-import com.xuehui.product.model.Product;
+import com.xuehui.order.model.product.Product;
 import com.xuehui.product.vo.ProductVo;
 
 import java.util.List;

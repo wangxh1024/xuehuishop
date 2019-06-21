@@ -1,7 +1,7 @@
 package com.xuehui.product.vo;
 
 
-import com.xuehui.product.model.Product;
+import com.xuehui.order.model.product.Product;
 
 public class ConstomProduct extends Product {
 }

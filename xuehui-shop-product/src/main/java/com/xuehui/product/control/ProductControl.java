@@ -1,7 +1,8 @@
 package com.xuehui.product.control;
 
-import com.sun.org.apache.xpath.internal.operations.Mod;
-import com.xuehui.product.model.Product;
+import com.netflix.discovery.converters.Auto;
+import com.xuehui.order.model.product.Product;
+import com.xuehui.product.api.ProductTypeApi;
 import com.xuehui.product.service.ProductService;
 import com.xuehui.product.vo.ProductVo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.Date;
 import java.util.List;
@@ -18,6 +20,9 @@ public class ProductControl {
 
     @Autowired
     ProductService productService;
+
+    @Autowired
+    private ProductTypeApi productTypeApi;
 
     @RequestMapping(value = "/insertProduct",method = RequestMethod.POST)
     public void insertProduct(Product product){
@@ -80,5 +85,9 @@ public class ProductControl {
     }
 
 
-
+    @ResponseBody
+    @RequestMapping(value = "test", method = RequestMethod.GET)
+    public String test(String name){
+        return productTypeApi.test(name);
+    }
 }

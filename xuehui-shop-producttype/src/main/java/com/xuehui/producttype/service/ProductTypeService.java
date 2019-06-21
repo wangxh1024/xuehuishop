@@ -1,7 +1,7 @@
 package com.xuehui.producttype.service;
 
+import com.xuehui.order.model.producttype.ProductType;
 import com.xuehui.producttype.dao.ProducttypeDao;
-import com.xuehui.producttype.model.ProductType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
